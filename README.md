@@ -418,4 +418,3 @@ aws_vpc.main: Destruction complete after 1s
 
 Destroy complete! Resources: 7 destroyed.
 
-(base) ➜ modules git:(main) ✗
