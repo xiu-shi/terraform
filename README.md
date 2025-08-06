@@ -8,412 +8,414 @@
 
 # terraform destroy
 
-# Initializing the backend...
 
-# Successfully configured the backend "s3"! Terraform will automatically
 
-# use this backend unless the backend configuration changes.
+Initializing the backend...
 
-# Initializing provider plugins...
+Successfully configured the backend "s3"! Terraform will automatically
 
-# - Reusing previous version of hashicorp/aws from the dependency lock file
+use this backend unless the backend configuration changes.
 
-# - Installing hashicorp/aws v6.7.0...
+Initializing provider plugins...
 
-# - Installed hashicorp/aws v6.7.0 (signed by HashiCorp)
+- Reusing previous version of hashicorp/aws from the dependency lock file
 
-# Terraform has been successfully initialized!
+- Installing hashicorp/aws v6.7.0...
 
-# You may now begin working with Terraform. Try running "terraform plan" to see
+- Installed hashicorp/aws v6.7.0 (signed by HashiCorp)
 
-# any changes that are required for your infrastructure. All Terraform commands
+Terraform has been successfully initialized!
 
-# should now work.
+You may now begin working with Terraform. Try running "terraform plan" to see
 
-# If you ever set or change modules or backend configuration for Terraform,
+any changes that are required for your infrastructure. All Terraform commands
 
-# rerun this command to reinitialize your working directory. If you forget, other
+should now work.
 
-# commands will detect it and remind you to do so if necessary.
+If you ever set or change modules or backend configuration for Terraform,
 
-# aws_vpc.main: Refreshing state... [id=vpc-04c947becc1a3e5d5]
+rerun this command to reinitialize your working directory. If you forget, other
 
-# aws_internet_gateway.igw: Refreshing state... [id=igw-002e772eb60447583]
+commands will detect it and remind you to do so if necessary.
 
-# aws_subnet.subnet2: Refreshing state... [id=subnet-04756df8cfce6692e]
+aws_vpc.main: Refreshing state... [id=vpc-04c947becc1a3e5d5]
 
-# aws_subnet.subnet1: Refreshing state... [id=subnet-027ac2f675059ecf6]
+aws_internet_gateway.igw: Refreshing state... [id=igw-002e772eb60447583]
 
-# aws_route_table.main: Refreshing state... [id=rtb-02ed1c61399ee43b9]
+aws_subnet.subnet2: Refreshing state... [id=subnet-04756df8cfce6692e]
 
-# aws_route_table_association.subnet1: Refreshing state... [id=rtbassoc-09f69569382d42dc6]
+aws_subnet.subnet1: Refreshing state... [id=subnet-027ac2f675059ecf6]
 
-# aws_route_table_association.subnet2: Refreshing state... [id=rtbassoc-0665d1a7796c24bbb]
+aws_route_table.main: Refreshing state... [id=rtb-02ed1c61399ee43b9]
 
-# Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
+aws_route_table_association.subnet1: Refreshing state... [id=rtbassoc-09f69569382d42dc6]
 
-# ~ update in-place
+aws_route_table_association.subnet2: Refreshing state... [id=rtbassoc-0665d1a7796c24bbb]
 
-# Terraform will perform the following actions:
+Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
 
-# # aws_vpc.main will be updated in-place
+~ update in-place
 
-# ~ resource "aws_vpc" "main" {
+Terraform will perform the following actions:
 
-# id = "vpc-04c947becc1a3e5d5"
+# aws_vpc.main will be updated in-place
 
-# ~ tags = {
+~ resource "aws_vpc" "main" {
 
-# - "Name" = "tf-vpc" -> null
+id = "vpc-04c947becc1a3e5d5"
 
-# "name" = "main-tf-vpc"
+~ tags = {
 
-# }
+- "Name" = "tf-vpc" -> null
 
-# ~ tags_all = {
+"name" = "main-tf-vpc"
 
-# - "Name" = "tf-vpc" -> null
+}
 
-# # (1 unchanged element hidden)
+~ tags_all = {
 
-# }
+- "Name" = "tf-vpc" -> null
 
-# # (19 unchanged attributes hidden)
+# (1 unchanged element hidden)
 
-# }
+}
 
-# Plan: 0 to add, 1 to change, 0 to destroy.
+# (19 unchanged attributes hidden)
 
-# ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+}
 
-# Note: You didn't use the -out option to save this plan, so Terraform can't guarantee to take exactly these actions if you run "terraform apply" now.
+Plan: 0 to add, 1 to change, 0 to destroy.
 
-# aws_vpc.main: Refreshing state... [id=vpc-04c947becc1a3e5d5]
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
 
-# aws_internet_gateway.igw: Refreshing state... [id=igw-002e772eb60447583]
+Note: You didn't use the -out option to save this plan, so Terraform can't guarantee to take exactly these actions if you run "terraform apply" now.
 
-# aws_subnet.subnet2: Refreshing state... [id=subnet-04756df8cfce6692e]
+aws_vpc.main: Refreshing state... [id=vpc-04c947becc1a3e5d5]
 
-# aws_subnet.subnet1: Refreshing state... [id=subnet-027ac2f675059ecf6]
+aws_internet_gateway.igw: Refreshing state... [id=igw-002e772eb60447583]
 
-# aws_route_table.main: Refreshing state... [id=rtb-02ed1c61399ee43b9]
+aws_subnet.subnet2: Refreshing state... [id=subnet-04756df8cfce6692e]
 
-# aws_route_table_association.subnet2: Refreshing state... [id=rtbassoc-0665d1a7796c24bbb]
+aws_subnet.subnet1: Refreshing state... [id=subnet-027ac2f675059ecf6]
 
-# aws_route_table_association.subnet1: Refreshing state... [id=rtbassoc-09f69569382d42dc6]
+aws_route_table.main: Refreshing state... [id=rtb-02ed1c61399ee43b9]
 
-# Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
+aws_route_table_association.subnet2: Refreshing state... [id=rtbassoc-0665d1a7796c24bbb]
 
-# - destroy
+aws_route_table_association.subnet1: Refreshing state... [id=rtbassoc-09f69569382d42dc6]
 
-# Terraform will perform the following actions:
+Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
 
-# # aws_internet_gateway.igw will be destroyed
+- destroy
 
-# - resource "aws_internet_gateway" "igw" {
+Terraform will perform the following actions:
 
-# - arn = "arn:aws:ec2:eu-west-1:254940635427:internet-gateway/igw-002e772eb60447583" -> null
+# aws_internet_gateway.igw will be destroyed
 
-# - id = "igw-002e772eb60447583" -> null
+- resource "aws_internet_gateway" "igw" {
 
-# - owner_id = "254940635427" -> null
+- arn = "arn:aws:ec2:eu-west-1:254940635427:internet-gateway/igw-002e772eb60447583" -> null
 
-# - region = "eu-west-1" -> null
+- id = "igw-002e772eb60447583" -> null
 
-# - tags = {
+- owner_id = "254940635427" -> null
 
-# - "name" = "main-vpc-igw"
+- region = "eu-west-1" -> null
 
-# } -> null
+- tags = {
 
-# - tags_all = {
+- "name" = "main-vpc-igw"
 
-# - "name" = "main-vpc-igw"
+} -> null
 
-# } -> null
+- tags_all = {
 
-# - vpc_id = "vpc-04c947becc1a3e5d5" -> null
+- "name" = "main-vpc-igw"
 
-# }
+} -> null
 
-# # aws_route_table.main will be destroyed
+- vpc_id = "vpc-04c947becc1a3e5d5" -> null
 
-# - resource "aws_route_table" "main" {
+}
 
-# - arn = "arn:aws:ec2:eu-west-1:254940635427:route-table/rtb-02ed1c61399ee43b9" -> null
+# aws_route_table.main will be destroyed
 
-# - id = "rtb-02ed1c61399ee43b9" -> null
+- resource "aws_route_table" "main" {
 
-# - owner_id = "254940635427" -> null
+- arn = "arn:aws:ec2:eu-west-1:254940635427:route-table/rtb-02ed1c61399ee43b9" -> null
 
-# - propagating_vgws = [] -> null
+- id = "rtb-02ed1c61399ee43b9" -> null
 
-# - region = "eu-west-1" -> null
+- owner_id = "254940635427" -> null
 
-# - route = [
+- propagating_vgws = [] -> null
 
-# - {
+- region = "eu-west-1" -> null
 
-# - cidr_block = "0.0.0.0/0"
+- route = [
 
-# - gateway_id = "igw-002e772eb60447583"
+- {
 
-# # (11 unchanged attributes hidden)
+- cidr_block = "0.0.0.0/0"
 
-# },
+- gateway_id = "igw-002e772eb60447583"
 
-# ] -> null
+# (11 unchanged attributes hidden)
 
-# - tags = {
+},
 
-# - "name" = "main-tf-route-table"
+] -> null
 
-# } -> null
+- tags = {
 
-# - tags_all = {
+- "name" = "main-tf-route-table"
 
-# - "name" = "main-tf-route-table"
+} -> null
 
-# } -> null
+- tags_all = {
 
-# - vpc_id = "vpc-04c947becc1a3e5d5" -> null
+- "name" = "main-tf-route-table"
 
-# }
+} -> null
 
-# # aws_route_table_association.subnet1 will be destroyed
+- vpc_id = "vpc-04c947becc1a3e5d5" -> null
 
-# - resource "aws_route_table_association" "subnet1" {
+}
 
-# - id = "rtbassoc-09f69569382d42dc6" -> null
+# aws_route_table_association.subnet1 will be destroyed
 
-# - region = "eu-west-1" -> null
+- resource "aws_route_table_association" "subnet1" {
 
-# - route_table_id = "rtb-02ed1c61399ee43b9" -> null
+- id = "rtbassoc-09f69569382d42dc6" -> null
 
-# - subnet_id = "subnet-027ac2f675059ecf6" -> null
+- region = "eu-west-1" -> null
 
-# # (1 unchanged attribute hidden)
+- route_table_id = "rtb-02ed1c61399ee43b9" -> null
 
-# }
+- subnet_id = "subnet-027ac2f675059ecf6" -> null
 
-# # aws_route_table_association.subnet2 will be destroyed
+# (1 unchanged attribute hidden)
 
-# - resource "aws_route_table_association" "subnet2" {
+}
 
-# - id = "rtbassoc-0665d1a7796c24bbb" -> null
+# aws_route_table_association.subnet2 will be destroyed
 
-# - region = "eu-west-1" -> null
+- resource "aws_route_table_association" "subnet2" {
 
-# - route_table_id = "rtb-02ed1c61399ee43b9" -> null
+- id = "rtbassoc-0665d1a7796c24bbb" -> null
 
-# - subnet_id = "subnet-04756df8cfce6692e" -> null
+- region = "eu-west-1" -> null
 
-# # (1 unchanged attribute hidden)
+- route_table_id = "rtb-02ed1c61399ee43b9" -> null
 
-# }
+- subnet_id = "subnet-04756df8cfce6692e" -> null
 
-# # aws_subnet.subnet1 will be destroyed
+# (1 unchanged attribute hidden)
 
-# - resource "aws_subnet" "subnet1" {
+}
 
-# - arn = "arn:aws:ec2:eu-west-1:254940635427:subnet/subnet-027ac2f675059ecf6" -> null
+# aws_subnet.subnet1 will be destroyed
 
-# - assign_ipv6_address_on_creation = false -> null
+- resource "aws_subnet" "subnet1" {
 
-# - availability_zone = "eu-west-1a" -> null
+- arn = "arn:aws:ec2:eu-west-1:254940635427:subnet/subnet-027ac2f675059ecf6" -> null
 
-# - availability_zone_id = "euw1-az2" -> null
+- assign_ipv6_address_on_creation = false -> null
 
-# - cidr_block = "192.168.1.0/24" -> null
+- availability_zone = "eu-west-1a" -> null
 
-# - enable_dns64 = false -> null
+- availability_zone_id = "euw1-az2" -> null
 
-# - enable_lni_at_device_index = 0 -> null
+- cidr_block = "192.168.1.0/24" -> null
 
-# - enable_resource_name_dns_a_record_on_launch = false -> null
+- enable_dns64 = false -> null
 
-# - enable_resource_name_dns_aaaa_record_on_launch = false -> null
+- enable_lni_at_device_index = 0 -> null
 
-# - id = "subnet-027ac2f675059ecf6" -> null
+- enable_resource_name_dns_a_record_on_launch = false -> null
 
-# - ipv6_native = false -> null
+- enable_resource_name_dns_aaaa_record_on_launch = false -> null
 
-# - map_customer_owned_ip_on_launch = false -> null
+- id = "subnet-027ac2f675059ecf6" -> null
 
-# - map_public_ip_on_launch = false -> null
+- ipv6_native = false -> null
 
-# - owner_id = "254940635427" -> null
+- map_customer_owned_ip_on_launch = false -> null
 
-# - private_dns_hostname_type_on_launch = "ip-name" -> null
+- map_public_ip_on_launch = false -> null
 
-# - region = "eu-west-1" -> null
+- owner_id = "254940635427" -> null
 
-# - tags = {
+- private_dns_hostname_type_on_launch = "ip-name" -> null
 
-# - "name" = "main-tf-subnet1"
+- region = "eu-west-1" -> null
 
-# } -> null
+- tags = {
 
-# - tags_all = {
+- "name" = "main-tf-subnet1"
 
-# - "name" = "main-tf-subnet1"
+} -> null
 
-# } -> null
+- tags_all = {
 
-# - vpc_id = "vpc-04c947becc1a3e5d5" -> null
+- "name" = "main-tf-subnet1"
 
-# # (4 unchanged attributes hidden)
+} -> null
 
-# }
+- vpc_id = "vpc-04c947becc1a3e5d5" -> null
 
-# # aws_subnet.subnet2 will be destroyed
+# (4 unchanged attributes hidden)
 
-# - resource "aws_subnet" "subnet2" {
+}
 
-# - arn = "arn:aws:ec2:eu-west-1:254940635427:subnet/subnet-04756df8cfce6692e" -> null
+# aws_subnet.subnet2 will be destroyed
 
-# - assign_ipv6_address_on_creation = false -> null
+- resource "aws_subnet" "subnet2" {
 
-# - availability_zone = "eu-west-1b" -> null
+- arn = "arn:aws:ec2:eu-west-1:254940635427:subnet/subnet-04756df8cfce6692e" -> null
 
-# - availability_zone_id = "euw1-az3" -> null
+- assign_ipv6_address_on_creation = false -> null
 
-# - cidr_block = "192.168.2.0/24" -> null
+- availability_zone = "eu-west-1b" -> null
 
-# - enable_dns64 = false -> null
+- availability_zone_id = "euw1-az3" -> null
 
-# - enable_lni_at_device_index = 0 -> null
+- cidr_block = "192.168.2.0/24" -> null
 
-# - enable_resource_name_dns_a_record_on_launch = false -> null
+- enable_dns64 = false -> null
 
-# - enable_resource_name_dns_aaaa_record_on_launch = false -> null
+- enable_lni_at_device_index = 0 -> null
 
-# - id = "subnet-04756df8cfce6692e" -> null
+- enable_resource_name_dns_a_record_on_launch = false -> null
 
-# - ipv6_native = false -> null
+- enable_resource_name_dns_aaaa_record_on_launch = false -> null
 
-# - map_customer_owned_ip_on_launch = false -> null
+- id = "subnet-04756df8cfce6692e" -> null
 
-# - map_public_ip_on_launch = false -> null
+- ipv6_native = false -> null
 
-# - owner_id = "254940635427" -> null
+- map_customer_owned_ip_on_launch = false -> null
 
-# - private_dns_hostname_type_on_launch = "ip-name" -> null
+- map_public_ip_on_launch = false -> null
 
-# - region = "eu-west-1" -> null
+- owner_id = "254940635427" -> null
 
-# - tags = {
+- private_dns_hostname_type_on_launch = "ip-name" -> null
 
-# - "name" = "main-tf-subnet2"
+- region = "eu-west-1" -> null
 
-# } -> null
+- tags = {
 
-# - tags_all = {
+- "name" = "main-tf-subnet2"
 
-# - "name" = "main-tf-subnet2"
+} -> null
 
-# } -> null
+- tags_all = {
 
-# - vpc_id = "vpc-04c947becc1a3e5d5" -> null
+- "name" = "main-tf-subnet2"
 
-# # (4 unchanged attributes hidden)
+} -> null
 
-# }
+- vpc_id = "vpc-04c947becc1a3e5d5" -> null
 
-# # aws_vpc.main will be destroyed
+# (4 unchanged attributes hidden)
 
-# - resource "aws_vpc" "main" {
+}
 
-# - arn = "arn:aws:ec2:eu-west-1:254940635427:vpc/vpc-04c947becc1a3e5d5" -> null
+# aws_vpc.main will be destroyed
 
-# - assign_generated_ipv6_cidr_block = false -> null
+- resource "aws_vpc" "main" {
 
-# - cidr_block = "192.168.0.0/16" -> null
+- arn = "arn:aws:ec2:eu-west-1:254940635427:vpc/vpc-04c947becc1a3e5d5" -> null
 
-# - default_network_acl_id = "acl-05d6c9a1ba05a26f7" -> null
+- assign_generated_ipv6_cidr_block = false -> null
 
-# - default_route_table_id = "rtb-06959c2eda13833fb" -> null
+- cidr_block = "192.168.0.0/16" -> null
 
-# - default_security_group_id = "sg-0317c2ce306ecfbe2" -> null
+- default_network_acl_id = "acl-05d6c9a1ba05a26f7" -> null
 
-# - dhcp_options_id = "dopt-0615e6e7e8c184ada" -> null
+- default_route_table_id = "rtb-06959c2eda13833fb" -> null
 
-# - enable_dns_hostnames = false -> null
+- default_security_group_id = "sg-0317c2ce306ecfbe2" -> null
 
-# - enable_dns_support = true -> null
+- dhcp_options_id = "dopt-0615e6e7e8c184ada" -> null
 
-# - enable_network_address_usage_metrics = false -> null
+- enable_dns_hostnames = false -> null
 
-# - id = "vpc-04c947becc1a3e5d5" -> null
+- enable_dns_support = true -> null
 
-# - instance_tenancy = "default" -> null
+- enable_network_address_usage_metrics = false -> null
 
-# - ipv6_netmask_length = 0 -> null
+- id = "vpc-04c947becc1a3e5d5" -> null
 
-# - main_route_table_id = "rtb-06959c2eda13833fb" -> null
+- instance_tenancy = "default" -> null
 
-# - owner_id = "254940635427" -> null
+- ipv6_netmask_length = 0 -> null
 
-# - region = "eu-west-1" -> null
+- main_route_table_id = "rtb-06959c2eda13833fb" -> null
 
-# - tags = {
+- owner_id = "254940635427" -> null
 
-# - "Name" = "tf-vpc"
+- region = "eu-west-1" -> null
 
-# - "name" = "main-tf-vpc"
+- tags = {
 
-# } -> null
+- "Name" = "tf-vpc"
 
-# - tags_all = {
+- "name" = "main-tf-vpc"
 
-# - "Name" = "tf-vpc"
+} -> null
 
-# - "name" = "main-tf-vpc"
+- tags_all = {
 
-# } -> null
+- "Name" = "tf-vpc"
 
-# # (4 unchanged attributes hidden)
+- "name" = "main-tf-vpc"
 
-# }
+} -> null
 
-# Plan: 0 to add, 0 to change, 7 to destroy.
+# (4 unchanged attributes hidden)
 
-# Do you really want to destroy all resources?
+}
 
-# Terraform will destroy all your managed infrastructure, as shown above.
+Plan: 0 to add, 0 to change, 7 to destroy.
 
-# There is no undo. Only 'yes' will be accepted to confirm.
+Do you really want to destroy all resources?
 
-# Enter a value: yes
+Terraform will destroy all your managed infrastructure, as shown above.
 
-# aws_route_table_association.subnet1: Destroying... [id=rtbassoc-09f69569382d42dc6]
+There is no undo. Only 'yes' will be accepted to confirm.
 
-# aws_route_table_association.subnet2: Destroying... [id=rtbassoc-0665d1a7796c24bbb]
+Enter a value: yes
 
-# aws_route_table_association.subnet2: Destruction complete after 0s
+aws_route_table_association.subnet1: Destroying... [id=rtbassoc-09f69569382d42dc6]
 
-# aws_subnet.subnet2: Destroying... [id=subnet-04756df8cfce6692e]
+aws_route_table_association.subnet2: Destroying... [id=rtbassoc-0665d1a7796c24bbb]
 
-# aws_route_table_association.subnet1: Destruction complete after 0s
+aws_route_table_association.subnet2: Destruction complete after 0s
 
-# aws_route_table.main: Destroying... [id=rtb-02ed1c61399ee43b9]
+aws_subnet.subnet2: Destroying... [id=subnet-04756df8cfce6692e]
 
-# aws_subnet.subnet1: Destroying... [id=subnet-027ac2f675059ecf6]
+aws_route_table_association.subnet1: Destruction complete after 0s
 
-# aws_subnet.subnet2: Destruction complete after 1s
+aws_route_table.main: Destroying... [id=rtb-02ed1c61399ee43b9]
 
-# aws_subnet.subnet1: Destruction complete after 1s
+aws_subnet.subnet1: Destroying... [id=subnet-027ac2f675059ecf6]
 
-# aws_route_table.main: Destruction complete after 1s
+aws_subnet.subnet2: Destruction complete after 1s
 
-# aws_internet_gateway.igw: Destroying... [id=igw-002e772eb60447583]
+aws_subnet.subnet1: Destruction complete after 1s
 
-# aws_internet_gateway.igw: Destruction complete after 0s
+aws_route_table.main: Destruction complete after 1s
 
-# aws_vpc.main: Destroying... [id=vpc-04c947becc1a3e5d5]
+aws_internet_gateway.igw: Destroying... [id=igw-002e772eb60447583]
 
-# aws_vpc.main: Destruction complete after 1s
+aws_internet_gateway.igw: Destruction complete after 0s
 
-# Destroy complete! Resources: 7 destroyed.
+aws_vpc.main: Destroying... [id=vpc-04c947becc1a3e5d5]
 
-# (base) ➜ modules git:(main) ✗
+aws_vpc.main: Destruction complete after 1s
+
+Destroy complete! Resources: 7 destroyed.
+
+(base) ➜ modules git:(main) ✗
